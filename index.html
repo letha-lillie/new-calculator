@@ -10,58 +10,43 @@
   <body>
     <div class="container">
     <h1>Calculator</h1>
-    <div id="calculator">
-      <form>
-        <div class="form-group">
-          <h3>Add these two numbers:</h3>
-          <label for="number1">Number 1: </label>
-          <input id="number1" class="form-control" type="number">
-        </div>
-        <div class="form-group">
-          <label for="number2">Number 2: </label>
-          <input id="number2" class="form-control" type="number">
-        </div>
+    <form id="calculator">
+      <div class="form-group">
+        <label for="input1">1st number:</label>
+        <input id="input1" class="form-control" type="text">
+      </div>
+      <div class="form-group">
+        <label for="input2">2nd number:
+        </label>
+        <input id="input2" class="form-control" type="text">
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="operator" value="add" checked>add
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="operator" value="subtract">subtract
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="operator" value="multiply">multiply
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="operator" value="divide">divide
+        </label>
+      </div>
+      <button type="submit" class="btn">Go!</button>
+    </form>
+    <div id="output">
 
-        <div class="form-group">
-          <h3>Subtract number 4 from number 3:</h3>
-          <label for="number3">Number 3: </label>
-          <input id="number3" class="form-control" type="number">
-        </div>
-        <div class="form-group">
-          <label for="number4">Number 4: </label>
-          <input id="number4" class="form-control" type="number">
-        </div>
+    </div>
 
-        <div class="form-group">
-          <h3>Multiply these two numbers:</h3>
-          <label for="number5">Number 5: </label>
-          <input id="number5" class="form-control" type="number">
-        </div>
-        <div class="form-group">
-          <label for="number6">Number 6: </label>
-          <input id="number6" class="form-control" type="number">
-        </div>
 
-        <div class="form-group">
-          <h3>Divide number 7 by number 8:</h3>
-          <label for="number7">Number 7: </label>
-          <input id="number7" class="form-control" type="number">
-        </div>
-        <div class="form-group">
-          <label for="number8">Number 8: </label>
-          <input id="number8" class="form-control" type="number">
-        </div>
-
-        <button type="submit" class="btn">Calculate!</button>
-      </form>
-
-        <h1>RESULTS:</h1>
-        <ul>
-          <li>Addition: <span class="result1"></span></li>
-          <li>Subtraction: <span class="result2"></span></li>
-          <li>Multiplication: <span class="result3"></span></li>
-          <li>Division: <span class="result4"></span></li>
-        </ul>
 
         <div class ="feedback">
           <h4>So, how do you like math now?!</h4>
@@ -86,7 +71,6 @@
 
         </div>
 
-    </div>
     </div>
   </body>
 </html>
