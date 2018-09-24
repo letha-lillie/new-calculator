@@ -1,3 +1,19 @@
-.feedback {
-  display: none;
+h1 {
+  	color: 	#000080;
+}
+
+#calculator {
+  color: 	#6A5ACD;
+}
+
+.radios {
+  width: 100px;
+}
+
+div.button-holder {
+  padding-top: 50px;
+}
+
+body {
+  margin: 10vh 10vw;
 }
